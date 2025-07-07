@@ -84,10 +84,9 @@ node server.js<br>
 Open frontend/index.html or frontend/login.html in your browser using Live Server or a static server.<br>
 <br>
 ## **🌐 APIs Used**
-**Platform	      Integration** <br>
-LeetCode	        GraphQL API <br>
-Codeforces	      Official REST API <br>
-GFG / Others	    Web scraping / unofficial APIs <br>
+LeetCode	->        GraphQL API <br>
+Codeforces	 ->     Official REST API <br>
+GFG / Others	->    Web scraping / unofficial APIs <br>
 
 ## **🤝 Contributing**
 Contributions, issues and feature requests are welcome!
