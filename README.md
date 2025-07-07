@@ -33,8 +33,8 @@ A full-stack web application that analyzes and ranks a user’s coding performan
 - Python (for code analysis, ranking, NLP review)
 
 ## **🏗️ Project Architecture**
-CodeProfileAnalysis/ /n
-├── backend/ /n
+CodeProfileAnalysis/
+├── backend/
 │ ├── models/
 │ │ ├── CodeforcesProfile.js
 │ │ ├── CodingNinjasProfile.js
@@ -43,13 +43,14 @@ CodeProfileAnalysis/ /n
 │ │ ├── LeetcodeProfile.js
 │ │ ├── User.js
 │ │ └── UserProfile.js
-│ ├── routes/auth.js
+│ ├── routes/
+│ │ └── auth.js
 │ ├── scrapeCodeforces.js
 │ ├── scrapeCodingNinjas.js
 │ ├── scrapeHackerRank.js
 │ ├── scrapeGeeksForGeeks.js
-│  └── scraperLeetcode.js
-│  └── server.js
+│ ├── scraperLeetcode.js
+│ └── server.js
 │
 ├── frontend/
 │ ├── css/
