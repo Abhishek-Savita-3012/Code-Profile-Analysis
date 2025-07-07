@@ -33,8 +33,8 @@ A full-stack web application that analyzes and ranks a user’s coding performan
 - Python (for code analysis, ranking, NLP review)
 
 ## **🏗️ Project Architecture**
-CodeProfileAnalysis/\n
-├── backend/\n
+CodeProfileAnalysis/ /n
+├── backend/ /n
 │ ├── models/
 │ │ ├── CodeforcesProfile.js
 │ │ ├── CodingNinjasProfile.js
