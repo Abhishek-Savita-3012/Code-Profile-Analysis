@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Profile Lookup</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Code Profile Analysis</h1>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <!-- Login and Signup Forms -->
+            <div id="authSection">
+                <div id="signupForm">
+                    <h2>Signup</h2>
+                    <input type="text" id="signupName" placeholder="Name" required />
+                    <input type="email" id="signupEmail" placeholder="Email" required />
+                    <input type="password" id="signupPassword" placeholder="Password" required />
+                    <button onclick="handleSignup()">Signup</button>
+                </div>
+
+                <div id="loginForm">
+                    <h2>Login</h2>
+                    <input type="email" id="loginEmail" placeholder="Email" required />
+                    <input type="password" id="loginPassword" placeholder="Password" required />
+                    <button onclick="handleLogin()">Login</button>
+                </div>
+            </div>
+
+            <!-- Platform Selector - hidden until login -->
+            <div id="mainApp" style="display: none;">
+                <label for="platformSelect">Select Coding Platform:</label>
+                <select id="platformSelect" onchange="handlePlatformChange()">
+                    <option value="">-- Select --</option>
+                    <option value="leetcode">LeetCode</option>
+                    <option value="gfg">GeeksforGeeks</option>
+                    <option value="hackerrank">HackerRank</option>
+                    <option value="codingninjas">CodingNinjas</option>
+                    <option value="codeforces">Codeforces</option>
+                </select>
+
+                <!-- Leetcode -->
+                <div id="leetcodeSection" class="platform-section">
+                    <h2>Leetcode Profile</h2>
+                    <input type="text" id="usernameInput" placeholder="Enter Username" />
+                    <button onclick="fetchLeetCodeProfile()">Get LeetCode Profile</button>
+                    <div id="leetProfile" style="display: none;">
+                        <h3>LeetCode Profile</h3>
+                        <img id="leetAvatar" src="" alt="LeetCode Avatar" />
+                        <h3 id="leetUsername"></h3>
+                        <p id="leetRanking"></p>
+                        <div class="stats">
+                            <h4>Problems Solved:</h4>
+                            <p><strong>Easy:</strong> <span id="leetEasy"></span></p>
+                            <p><strong>Medium:</strong> <span id="leetMedium"></span></p>
+                            <p><strong>Hard:</strong> <span id="leetHard"></span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GFG -->
+                <div id="gfgSection" class="platform-section">
+                    <h2>GeeksforGeeks Profile</h2>
+                    <input type="text" id="gfgUsername" placeholder="Enter GFG Username" />
+                    <button onclick="scrapeGFGProfile()">Get GFG Profile</button>
+                    <div id="result"></div>
+                </div>
+
+                <!-- HackerRank -->
+                <div id="hackerrankSection" class="platform-section">
+                    <h2>HackerRank Profile</h2>
+                    <input type="text" id="hackerrankUsername" placeholder="Enter HackerRank Username" />
+                    <button onclick="scrapeHackerRankProfile()">Get HackerRank Profile</button>
+                    <div id="hackerrankResult"></div>
+                </div>
+
+                <!-- CodingNinjas -->
+                <div id="codingninjasSection" class="platform-section">
+                    <h2>CodingNinjas Profile</h2>
+                    <input type="text" id="codingNinjasUsername" placeholder="Enter CodingNinjas Username" />
+                    <button onclick="scrapeCodingNinjasProfile()">Get CodingNinjas Profile</button>
+                    <div id="codingNinjasResult"></div>
+                </div>
+
+                <!-- Codeforces -->
+                <div id="codeforcesSection" class="platform-section">
+                    <h2>Codeforces Profile</h2>
+                    <input type="text" id="codeforcesUsername" placeholder="Enter Codeforces Username" />
+                    <button onclick="scrapeCodeforcesProfile()">Get Codeforces Profile</button>
+                    <div id="codeforcesResult"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="insightsSection">
+        <button onclick="getCodingInsights()">Get Your Coding Insights</button>
+        <div id="proficiencyResult"></div>
+    </div>
+
+    <footer>
+        <p>© 2025 Code Profile Analysis Website | All Rights Reserved</p>
+    </footer>
+
+    <script src="js/authentication.js"></script>
+    <script src="js/script.js"></script>
+    
+</body>
+
+</html>
