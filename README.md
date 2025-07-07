@@ -34,7 +34,8 @@ A full-stack web application that analyzes and ranks a user’s coding performan
 
 ## **🏗️ Project Architecture**
 <pre lang="markdown">
-```CodeProfileAnalysis/
+```
+CodeProfileAnalysis/
 ├── backend/
 │ ├── models/
 │ │ ├── CodeforcesProfile.js
@@ -59,7 +60,7 @@ A full-stack web application that analyzes and ranks a user’s coding performan
 │ ├── js/
 │ │ ├── authentication.js
 │ │ └── script.js
-│ └── index.html```
+│ └── index.html```</pre>
 
 ## **🔧 Installation & Setup**
 **1. Clone the repository :** 
