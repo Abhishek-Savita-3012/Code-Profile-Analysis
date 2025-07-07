@@ -60,7 +60,8 @@ CodeProfileAnalysis/
 │ ├── js/
 │ │ ├── authentication.js
 │ │ └── script.js
-│ └── index.html```</pre>
+│ └── index.html
+```</pre>
 
 ## **🔧 Installation & Setup**
 **1. Clone the repository :** 
