@@ -64,25 +64,25 @@ CodeProfileAnalysis/
 ```</pre>
 
 ## **🔧 Installation & Setup**
-**1. Clone the repository :** 
-git clone https://github.com/your-username/CodeProfileAnalysis.git
-cd CodeProfileAnalysis
-
-**2. Install backend dependencies :**
-cd backend
-npm install
-
-**3. Setup MongoDB :**
-•	Create a local or Atlas MongoDB database.
-•	Update the MongoDB URI in server.js:
-mongoose.connect('mongodb://localhost:27017/code_profile');
-
-**4. Start the backend server :**
-node server.js
-
-**5. Open the frontend :**
-Open frontend/index.html or frontend/login.html in your browser using Live Server or a static server.
-
+**1. Clone the repository :** <br>
+git clone https://github.com/your-username/CodeProfileAnalysis.git <br>
+cd CodeProfileAnalysis<br>
+<br>
+**2. Install backend dependencies :** <br>
+cd backend<br>
+npm install<br>
+<br>
+**3. Setup MongoDB :** <br>
+•	Create a local or Atlas MongoDB database.<br>
+•	Update the MongoDB URI in server.js:<br>
+mongoose.connect('mongodb://localhost:27017/code_profile');<br>
+<br>
+**4. Start the backend server :** <br>
+node server.js<br>
+<br>
+**5. Open the frontend :** <br>
+Open frontend/index.html or frontend/login.html in your browser using Live Server or a static server.<br>
+<br>
 ## **🌐 APIs Used**
 **Platform	      Integration**
 LeetCode	        GraphQL API
@@ -93,9 +93,9 @@ GFG / Others	    Web scraping / unofficial APIs
 Contributions, issues and feature requests are welcome!
 
 ## **✨ Acknowledgements**
-•	LeetCode GraphQL
-•	Codeforces API
-•	OpenAI GPT for code insights
+•	LeetCode GraphQL<br>
+•	Codeforces API<br>
+•	OpenAI GPT for code insights<br>
 
 
 
